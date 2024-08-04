@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Doctor Appointment Booking</h1>
+        </header>
+
+        <section id="booking-section">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form">
+                <input type="text" id="patient-name" placeholder="Patient Name" required>
+                <select id="doctor-selection" required>
+                    <option value="">Select Doctor</option>
+                </select>
+                <input type="date" id="appointment-date" required>
+                <input type="time" id="appointment-time" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <section id="cancel-section">
+            <h2>Cancel an Appointment</h2>
+            <input type="text" id="appointment-id" placeholder="Appointment ID" required>
+            <button id="cancel-appointment">Cancel Appointment</button>
+        </section>
+
+        <section id="view-section">
+            <h2>View Appointments</h2>
+            <button id="view-appointments">View All Appointments</button>
+            <div id="appointments-list"></div>
+        </section>
+
+        <section id="doctors-section">
+            <h2>Doctors</h2>
+            <table id="doctors-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Field</th>
+                        <th>Total Slots</th>
+                        <th>Available Slots</th>
+                        <th>Booked Slots</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
